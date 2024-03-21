@@ -1,0 +1,16 @@
+{
+  "name": "videotube",
+  "version": "1.0.0",
+  "description": "video tube is like youTube backend project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "videoTube",
+    "backend",
+    "chai"
+  ],
+  "author": "Sanjay Pal",
+  "license": "ISC"
+}
