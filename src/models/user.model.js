@@ -38,7 +38,7 @@ const userSchema = new Schema(
             ref:"Video"
             }
         ],
-        pasword:{
+        password:{
             type:String,
             required:[true,'Password is required']
         },
@@ -54,7 +54,7 @@ const userSchema = new Schema(
 userSchema.pre("save",async function (next) {
     if(!this.isModified("password")) return next();
 
-    this.pasword = await bcrypt.hash(this.password,10)
+    this.password = await bcrypt.hash(this.password,10)
     next()
 })
 
